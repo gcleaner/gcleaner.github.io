@@ -24,8 +24,8 @@
     </head>
     <body style="background-color: #F5F5F5;">
         <!--HEADER DESKTOP-->
-        <div id="header-gc" class="container-fluid visible-sm visible-md visible-lg">
-          <center><ul id="nav-gc" class="nav nav-tabs nav-justified">
+        <div id="header-contactus" class="container-fluid visible-sm visible-md visible-lg">
+          <center><ul id="nav-gc" class="nav nav-tabs nav-justified nav-contactus">
             <li><a href="/">Home</a></li>
             <li><a href="/get_involved">Get Involved</a></li>
             <li><a href="/about">About</a></li>
@@ -34,27 +34,31 @@
           <br>
           <center>
               <br>
-              <h1 class="title-header">Soon</h1>
-              <h3 class="title-desc">Work in progress!</h3>
+              <h1 class="title-header">Contact Us</h1>
+              <h3 class="title-desc">Any questions? Any suggestions or ideas? <br>
+                                     Do you want to contribute your bit? Contact Us!</h3>
               <img src="img/fill.png" alt="fill" style="width: 100%; height: 2px; margin-top: 8%;">
           </center>
         </div>
 
         <!--MOBILE MENU-->
-        <nav class="navbar navbar-inverse visible-xs">
+        <nav class="navbar navbar-inverse navbar-contactus visible-xs">
           <div class="container-fluid">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
+              <button type="button" class="navbar-toggle" id="toggle-contactus" data-toggle="collapse" data-target="#myNavbarContactus">
+                <span class="icon-bar" style="color: #0F0F0F!important;"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                        
               </button>
               <ul class="mobile-header">
                 <li><img src="img/mobile-icon.png" class="mobile-icon" alt=""/></li>
-                <li><a class="navbar-brand" id="mobile-title" href="/">GCleaner</a></li>
+                <li><a class="navbar-brand" id="mobile-title" href="/" style="color: #000!important; width: 200px;">Contact Us</a></li>
               </ul>
+              <h1 class="title-contactus"></h1>
+              <p class="titlep-contactus">Any questions? Any suggestions or ideas? Do you want to contribute your bit? Contact Us!.</p>
+              <hr class="visible-xs line-dl">
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="collapse navbar-collapse" id="myNavbarContactus">
               <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
                 <li><a href="/get_involved">Get Involved</a></li>
@@ -64,37 +68,20 @@
             </div>
           </div>
         </nav>
-        <br class="visible-xs">
-        <hr class="visible-xs line-dl">
-
-        <!--<center>
-            <button class="button-dl">
-                <span>
-                    <a href="#DownloadDEB" style="text-decoration: none;color: #fff;"><img src="img/downloadicon.png">Download</a>
-                </span>
-            </button>
-        </center>-->
 
         <center>
           <div id="main-description" class="container-fluid">
             <br>
             <br>
-            <h1>Open Source, Light and Dynamic</h1>
-            <p id="text-justified">
-               GCleaner Allows to keep clean your GNU/Linux system easily. Is so light and aerodynamically
-               simple as a feather. Its source code is freely available for anyone to download and modify,
-               leading to active development and a diverse feature set. There are currently two versions of
-               GCleaner alive, one written in Vala and the other in Python, allowing any type of developer
-               to participate in the project. Help us to make this project a reality.
-            </p> 
+            <h1 class="visible-sm visible-md visible-lg"><i class="far fa-envelope"></i>  Send us a message</h1>
+            <h1 class="visible-xs" style="font: 200 2em/1 'Open Sans'; margin-top: -12px;"><i class="far fa-envelope"></i>  Send us a message</h1>
+            <p id="text-justified" style="margin-right: 150px; margin-left: 150px;" class="visible-sm visible-md visible-lg"> Feel free to express your doubts, to present your suggestions or ideas because they help grow the
+                project and generate a much more connected user community. Listening to the community and joining forces is important for the project... write us!</p>
+            <p id="text-justified" class="visible-xs"> Feel free to express your doubts, to present your suggestions or ideas because they help grow the
+                project and generate a much more connected user community. Listening to the community and joining forces is important for the project... write us!</p> 
           </div>
-            <br><br>
-          <button class="button-involved">
-                <span>
-                    <a href="/get_involved" style="text-decoration: none;color: #fff;"><i class="fas fa-hands-helping"></i>  Get Involved</a>
-                </span>
-            </button>
-            <br><br>
+          <a class="button-sendmessage" href="mailto:gcleaner.adm@gmail.com"><i class="fas fa-paper-plane"></i>  Send us an email!</a>
+          <br><br>
         </center>
 
 
