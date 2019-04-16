@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>GCleaner</title>
+        <title>GCleaner - Get Involved</title>
         <meta name="description" content="A System Cleaner For GNU/Linux">
         <meta name="keywords" content="gcleaner, system cleaner, gnu cleaner, linux cleaner, linux system cleaner, gnu/linux cleaner, python cleaner, gtk linux cleaner, linux cache cleaner, linux temp cleaner, temporary files cleaner, cleaner, free software linux cleaner">
         <meta name="Robots" content="all">
         <meta name="googlebot" content="index, follow">
         <meta name="copyright" content="gcleaner.github.io">
         <meta name="distribution" content="global">
-        <meta name="author" content="Juan Pablo Lozano>
+        <meta name="author" content="Juan Pablo Lozano <gcleaner.adm@gmail.com>">
         <meta profile="http://www.w3.org/2005/10/profile">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/ico" href="favicon.ico">
@@ -22,163 +22,79 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </head>
-    <body>
+    <body style="background-color: #F5F5F5;">
         <!--HEADER DESKTOP-->
-        <div id="header-gc" class="container-fluid visible-sm visible-md visible-lg">
+        <div id="header-involved" class="container-fluid visible-sm visible-md visible-lg">
           <center><ul id="nav-gc" class="nav nav-tabs nav-justified">
-            <li><a class="activo" href="#">Home</a></li>
-            <li><a href="#">Get Involved</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a class="activo" href="/get_involved">Get Involved</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact_us">Contact Us</a></li>
           </ul></center>
           <br>
           <center>
               <br>
-              <h1 class="title-header">GCleaner</h1>
+              <h1 class="title-header">Be a Part of Something Bigger</h1>
               <!--<h3 class="title-desc">A System Cleaner For GNU/Linux</h3>-->
-              <p class="titlep-desc">A System Cleaner For GNU/Linux A System Cleaner For GNU/Linux A System Cleaner For GNU/Linux A System Cleaner For GNU/Linux A System Cleaner For GNU/Linux A System Cleaner For GNU/Linux</p>
-              <img src="img/gc-screenshot2.png" alt="screenshot" style="width: 100%; margin-top: 8%;">
+              <p class="titlep-desc" style="margin-top: 28px;">Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and make a difference.</p>
+              <img src="img/fill.png" alt="fill" style="width: 100%; height: 2px; margin-top: 8%;">
           </center>
         </div>
 
         <!--MOBILE MENU-->
-        <nav class="navbar navbar-inverse visible-xs">
+        <nav class="navbar navbar-inverse navbar-involved visible-xs">
           <div class="container-fluid">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbarInv">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                        
               </button>
               <ul class="mobile-header">
                 <li><img src="img/mobile-icon.png" class="mobile-icon" alt=""/></li>
-                <li><a class="navbar-brand" id="mobile-title" href="#">GCleaner</a></li>
+                <li><a class="navbar-brand" id="mobile-title" href="/" style="color: #ffbf2a!important; width: 200px;">Get Involved</a></li>
               </ul>
+              <h1 class="title-involved">Be a Part of Something Bigger</h1>
+              <p class="titlep-involved">Everything that we make is 100% open source and developed collaboratively by people from all over the world. Even if you're not a programmer, you can get involved and make a difference.</p>
+              <hr class="visible-xs line-dl">
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="collapse navbar-collapse" id="myNavbarInv">
               <ul class="nav navbar-nav">
-                <li class="active"><a id="activo" href="#">Home</a></li>
-                <li><a href="#">Get Involved</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="/">Home</a></li>
+                <li class="active"><a id="activo" href="/get_involved">Get Involved</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact_us">Contact Us</a></li>
               </ul>
             </div>
           </div>
         </nav>
-        <br class="visible-xs">
-        <hr class="visible-xs line-dl">
-
-        <center>
-            <button class="button-dl">
-                <span>
-                    <a href="#DownloadDEB" style="text-decoration: none;color: #fff;"><img src="img/downloadicon.png">Download</a>
-                </span>
-            </button>
-        </center>
 
         <center>
           <div id="main-description" class="container-fluid">
             <br>
             <br>
-            <h1>
-              Like A Feather
-            </h1>
-            <p>
-              GCleaner is so light and aerodynamically simple as a feather.<br>
-              Allows to keep clean your GNU/Linux system easily.
+            <h1>Diversity &amp; Variety</h1>
+            <p id="text-justified">
+               GCleaner has two version. In the beginin of project the first version was writen in Vala.
+               Then, for some reason and porpouses GCleaner was rewriten in Python 3, bringin to the possibilities
+               to include new features and awesome characteristics and get other type of talents to the project. And
+                bla bla bla.
             </p> 
           </div>
+            <br><br>
+            <a class="button-github" href="https://github.com/gcleaner/gcleaner-python" target="_blank">Python 3 Version</a>
+            <br><br>
         </center>
 
-        <div id="characteristics" class="container-fluid">
-          <div class="col-sm-4">
-            <center>
-              <img src="img/granite.svg" class="char-img" alt=""/>
-              <h2>GTK+ And Granite</h2>
-              <p>
-                GCleaner handles the latest technologies such as GTK + and Granite framework 
-                to provide a clean and innovative user interface.
-              </p>
-            </center>
-          </div>
-          <div class="col-sm-4">
-            <center>
-              <img src="img/vala.svg" class="char-img" alt=""/>
-              <h2>Vala</h2>
-              <p>
-                Vala programming language that is so lightweight has been stimulated by 
-                Elemenary OS and gives to GCleaner an incredible speed.
-              </p>
-            </center>
-          </div>
-          <div class="col-sm-4">
-            <center>
-              <img src="img/opensource.svg" class="char-img" alt=""/>
-              <h2>Open Source</h2>
-              <p>
-                GCleaner's source code is freely available for anyone to download and modify, 
-                leading to active development and a diverse feature set.
-              </p>
-            </center>
-          </div>
-        </div>
-
-        <br>
-        <br>
-
-        <!--Description DESKTOP Mode-->
-        <div id="gc-desc" class="container-fluid">
-          <div class="col-sm-8">
-            <img src="img/headerandtoolbar.png" class="img-responsive visible-sm visible-md visible-lg" alt=""/>
-            <img src="img/headerandtoolbar-mobile.png" class="img-responsive visible-xs" alt=""/>
-          </div>
-          <div class="col-sm-4">
-            <center>
-              <h2>Adaptable</h2>
-              <p>
-                GCleaner may only be a little program, but with their ability to adapt it 
-                to any desktop and ability to analyze different areas of the system make it a powerful tool
-              </p>
-            </center>
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id="gc-desc" class="container-fluid">
-          <div class="col-sm-8 visible-xs">
-            <img src="img/gc-mobile-preview.png" class="img-responsive" alt=""/>
-          </div>
-          <div class="col-sm-4">
-            <center>
-              <h2>Simply Beautiful</h2>
-              <p>
-                GCleaner is carefully crafted by skilled designers and coders, right down to the last pixel.
-              </p>
-            </center>
-          </div>
-          <div class="col-sm-8 visible-sm visible-md visible-lg">
-            <img src="img/gc-desktop-preview.png" class="img-responsive" alt=""/>
-          </div>
-        </div>
-        <br><br>
-        <div class="container-fluid">
-          <div class="col-sm-9">
-
-          </div>
-          <div class="col-sm-3">
-
-          </div>
-        </div>
+        
 
         <!--FOOTER DESKTOP-->
         <div id="gc-footer" class="container-fluid">
           <div class="col-sm-4">
             <h2>about</h2>
             <p>
-              GCleaner is a system cleaner for Elementary OS Freya and Ubuntu 14.04+ writen in 
-              Vala, GTK+, Granite and GLib/GIO for the purpose that the users feel "at home" in 
+              GCleaner is a system cleaner for Ubuntu, Fedora and its based distributions writen in 
+              Vala, Python 3, GTK+, and GLib/GIO for the purpose that the users feel "at home" in 
               the world of GNU/Linux
             </p>
           </div>
@@ -199,7 +115,8 @@
           <div class="col-sm-2">
             <img src="img/bslogo.png" class="img-responsive" alt=""/>
             <p> 
-              A website by Juan Pablo Lozano.
+              A website by:<br>
+              Juan Pablo Lozano.
             </p>
           </div>
         </div>
