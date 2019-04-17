@@ -598,7 +598,7 @@
     background-color: #820000;
 }
 
-#myNavbarAbout ul li a, #myNavbarPaymentOK ul li a {
+#myNavbarAbout ul li a, #myNavbarPaymentOK ul li a, #myNavbarPaymentPROC ul li a {
     color: #FFFFFF;
 }
 
@@ -615,13 +615,17 @@
 	color: #FF0000!important;
 }
 
-/* ------- PAYMENT OK - NAVBAR MOBILE ---------- */
+/* ------- PAYMENT - NAVBAR MOBILE ---------- */
 #myNavbarPaymentOK {
     background-color: #75890c;
 }
 
-#myNavbarPaymentOK ul li a:hover {
+#myNavbarPaymentOK ul li a:hover, #myNavbarPaymentPROC ul li a:hover {
 	color: #ffbf2a;
+}
+
+#myNavbarPaymentPROC {
+    background-color: #207ce5;
 }
 
 #main-description h1 {
