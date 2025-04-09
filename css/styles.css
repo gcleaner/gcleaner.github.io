@@ -1,0 +1,579 @@
+/* Custom Variables */
+:root {
+    --primary-color: #CC0000;
+    --primary-hover: #990000;
+    --header-bg: #4D4D4D;
+    --dark-bg: #2D2D2D;
+    --darker-bg: #1A1A1A;
+    --light-text: #ffffff;
+    --gray-text: #e9ecef;
+    --card-bg: #333333;
+    --border-color: rgba(204, 0, 0, 0.5);
+    --muted-text: #adb5bd;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-padding-top: 80px; /* Adjust this value based on your navbar height */
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+.navbar-dark {
+    background-color: var(--darker-bg) !important;
+}
+
+.navbar-brand {
+    color: var(--light-text) !important;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #676767;
+    position: relative;
+}
+
+/* Optional: add subtle depth with a soft border bottom */
+.hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero-image {
+    animation: float 6s ease-in-out infinite;
+    filter: drop-shadow(0 0 15px rgba(204, 0, 0, 0.3));
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Feature Cards */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(204, 0, 0, 0.3);
+    background-color: var(--header-bg) !important;
+}
+
+.feature-card .fa-3x {
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .fa-3x {
+    transform: scale(1.1);
+}
+
+/* Code Block */
+.code-block {
+    background-color: var(--darker-bg) !important;
+    border: 1px solid #333;
+    border-radius: 6px;
+    position: relative;
+}
+
+.code-block pre {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.code-block code {
+    display: block;
+    padding: 0;
+    color: #e9ecef;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre;
+}
+
+/* Override Prism.js theme colors to match your site */
+.code-block .token.comment {
+    color: #666;
+}
+
+.code-block .token.function {
+    color: #CC0000;
+}
+
+.code-block .token.string {
+    color: #98C379;
+}
+
+.code-block .token.keyword {
+    color: #C678DD;
+}
+
+.code-block .token.operator {
+    color: #56B6C2;
+}
+
+/* Command line plugin customization */
+.command-line-prompt {
+    border-right: 1px solid #404040;
+    margin-right: 1em;
+}
+
+.command-line-prompt > span:before {
+    color: #666;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 6px;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.btn-outline-light:hover {
+    color: #ffffff !important;
+    background-color: var(--header-bg);
+    border-color: var(--header-bg);
+}
+
+/* Ensure the button transition is smooth */
+.btn-outline-light {
+    transition: all 0.3s ease;
+}
+
+/* Cards */
+.card {
+    background-color: var(--card-bg) !important;
+    border-color: var(--primary-color) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: var(--header-bg);
+    border-color: var(--primary-color) !important;
+}
+
+footer a {
+    color: var(--gray-text) !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--primary-color) !important;
+    text-decoration: none !important;
+}
+
+/* Optional: Add a subtle scale effect on hover */
+footer a i {
+    transition: transform 0.3s ease;
+}
+
+footer a:hover i {
+    transform: scale(1.2);
+}
+
+/* Footer styling */
+footer h5 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+footer .text-light-gray {
+    color: #b0b0b0;
+}
+
+footer .small {
+    line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 4rem 0;
+    }
+    
+    .hero-image {
+        margin-top: 2rem;
+        transform: none;
+    }
+    
+    .hero-image:hover {
+        transform: none;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section, #features, #get-started, #contribute {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Text colors */
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+/* Section backgrounds */
+.bg-secondary.bg-opacity-10 {
+    background-color: var(--darker-bg) !important;
+}
+
+/* Navbar text */
+.nav-link {
+    color: #e9ecef !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff6b6b !important; /* Lighter, more visible red */
+}
+
+/* Optional: add subtle underline on hover */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6b6b;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Card text */
+.card-text {
+    color: var(--muted-text);
+}
+
+/* Lead text */
+.lead {
+    color: var(--gray-text);
+}
+
+/* Button text */
+.btn-outline-light {
+    color: var(--light-text);
+}
+
+/* Section headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--light-text);
+}
+
+/* List items */
+.list-unstyled li {
+    color: var(--gray-text);
+}
+
+/* Strong text */
+strong {
+    color: var(--light-text);
+}
+
+/* Hero section text */
+.hero-section h1 {
+    color: var(--light-text);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Card titles */
+.card-title {
+    color: var(--light-text);
+    font-weight: 600;
+}
+
+/* Feature icon styling */
+.feature-icon {
+    transition: all 0.3s ease;
+    width: auto;
+    height: 48px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 0 rgba(249, 196, 64, 0));
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(249, 196, 64, 0.3));
+}
+
+/* Check icon styling */
+.check-icon {
+    color: #CC0000;
+    transition: transform 0.2s ease;
+}
+
+/* Optional: add a subtle animation on hover */
+li:hover .check-icon {
+    transform: scale(1.1);
+}
+
+/* Make the list items more interactive */
+.list-unstyled li {
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.list-unstyled li:hover {
+    background-color: rgba(77, 77, 77, 0.3);
+    transform: translateX(5px);
+}
+
+.list-unstyled li:hover .check-icon {
+    transform: scale(1.1);
+}
+
+.list-unstyled strong {
+    color: #ffffff;
+    margin-right: 0.5rem;
+}
+
+/* Header styling */
+.navbar {
+    background-color: var(--header-bg) !important;
+    border-bottom: none;
+}
+
+/* Optional: add subtle shadow to navbar for depth */
+.navbar {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Add some extra padding to section tops */
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* Adjust section headings */
+section h2 {
+    margin-top: -1rem; /* Compensate for the extra padding if needed */
+}
+
+/* Add this to your CSS */
+.text-muted {
+    color: #b0b0b0 !important; /* Light grey that's more readable on dark backgrounds */
+}
+
+.text-light-gray {
+    color: #b0b0b0;
+    opacity: 0.9;
+}
+
+/* Team section styling */
+.team-section img {
+    border: 3px solid var(--primary-color);
+    padding: 3px;
+    transition: transform 0.3s ease;
+}
+
+.team-section .card:hover img {
+    transform: scale(1.05);
+}
+
+/* Add team link to navigation */
+
+/* Contact section styling */
+#contact .card {
+    transition: transform 0.3s ease;
+}
+
+#contact .card:hover {
+    transform: translateY(-5px);
+}
+
+#contact .btn-lg {
+    transition: all 0.3s ease;
+}
+
+#contact .btn-lg:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(204, 0, 0, 0.3);
+}
+
+/* GitHub button styling */
+.btn-outline-light {
+    border-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #CC0000 !important;
+    border-color: #CC0000 !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(204, 0, 0, 0.3);
+}
+
+/* GitHub icon animation */
+.btn-outline-light i {
+    transition: transform 0.3s ease;
+}
+
+.btn-outline-light:hover i {
+    transform: rotate(360deg);
+}
+
+/* Highlight title styling */
+.highlight-title {
+    color: #ff4444;  /* Brighter red that's more readable */
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: add subtle hover effect */
+.highlight-title:hover {
+    color: #ff6666;
+    transition: color 0.3s ease;
+}
+
+/* Code syntax highlighting customization */
+.language-bash {
+    background: #1a1a1a !important;
+}
+
+/* Commands (like git, sudo, etc) */
+.language-bash .token.function {
+    color: #66d9ef !important;  /* Light blue, more readable */
+}
+
+/* Comments */
+.language-bash .token.comment {
+    color: #8c8c8c !important;  /* Lighter gray */
+}
+
+/* Strings and URLs */
+.language-bash .token.string {
+    color: #a8e6cf !important;  /* Light mint green */
+}
+
+/* Package names and parameters */
+.language-bash .token.parameter {
+    color: #ffd966 !important;  /* Soft yellow */
+}
+
+/* Directory paths */
+.language-bash .token.operator {
+    color: #ff9999 !important;  /* Soft red, more readable */
+}
+
+/* Code block container */
+.code-block {
+    border: 1px solid #333;
+    border-radius: 6px;
+    background-color: #1a1a1a !important;
+}
+
+/* Team role styling */
+.team-role {
+    color: #ff6b6b !important;  /* Brighter, more readable red */
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Optional: add subtle hover effect */
+.team-role:hover {
+    color: #ff8787 !important;
+    transition: color 0.3s ease;
+}
+
+/* Sponsor button styling */
+.btn-sponsor {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8787 100%);
+    border: none;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.btn-sponsor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff8787 0%, #ff6b6b 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.btn-sponsor:hover {
+    transform: translateY(-2px);
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+.btn-sponsor:hover::before {
+    opacity: 1;
+}
+
+.btn-sponsor i {
+    position: relative;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Optional: Add a floating animation when hovering over the button */
+.btn-sponsor:hover i {
+    animation: none;
+    transform: scale(1.2);
+} 
